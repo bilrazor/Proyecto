@@ -1,15 +1,33 @@
 import React, { useState } from "react";
 import LoginForm from "../user_login/UserLogin";
 import RegisterForm from "../user_register/UserRegister";
-
+import "./LoginPage.css" ;
+import logo from "./Imagenes/logo5.png";
 const LoginPage = () => {
   const [formType, setFormType] = useState("login");
 
   return (
-    <div>
-      <button onClick={() => setFormType("login")}>Login</button>
-      <button onClick={() => setFormType("register")}>Register</button>
-      {formType === "login" ? <LoginForm /> : <RegisterForm />}
+    <div className="grid-containerL"> 
+      <div className="headerL">
+         <img src={logo} alt="logo" width="25%" height="auto"></img>
+      </div>
+      <div className="centroL">
+        <div> 
+          <button onClick={() => setFormType("login")}>Login</button>
+          <button onClick={() => setFormType("register")}>Register</button>
+         
+        {formType === "login" ? <LoginForm /> : <RegisterForm />}
+        </div>
+      </div>
+      <div className="footerL">
+        <div> 
+          <a href="https://es.wikipedia.org/wiki/Privacidad" >Política de privacidad</a>
+          <a href="https://es.wikipedia.org/wiki/Privacidad" >Política de privacidad</a>
+          <a href="https://es.wikipedia.org/wiki/Privacidad" >Política de privacidad</a>
+          <a href="https://es.wikipedia.org/wiki/Privacidad" >Política de privacidad</a>
+          <a href="https://es.wikipedia.org/wiki/Privacidad" >Política de privacidad</a>
+        </div>
+      </div>
     </div>
   );
 };

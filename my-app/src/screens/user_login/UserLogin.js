@@ -51,14 +51,13 @@ const UserLogin = () => {
 
     return (
         <div>
-
             <form onSubmit={onSubmit}>
                 <label>Intruzca el nickName</label>
                 <input type="text" id="nickName" onChange={onChangeNick}></input>
                 <label>el Correo electrónico</label>
                 <input type="email" id="email" onChange={onChangeEmail}></input>
                 <label>Intruzca la Contraseña</label>
-                <input type="password" id="password" onChange={onChangePassword}></input>
+                <input type="password" id="password" onChange={onChangePassword}></input><br></br>
                 <input type="submit" id="submit" value="Iniciar Sesión"></input>
             </form>
         </div>

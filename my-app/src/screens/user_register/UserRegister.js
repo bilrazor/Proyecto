@@ -97,7 +97,7 @@ const UserRegister =()=>{
                 <label>password:</label>
                 <input type="password" id="password" name="password" onChangue={onChangePassword}></input>
                 <label>Confirmar Password:</label>
-                <input type="password" id="password" name="password" onChangue={onChangePasswordConfirm}></input>
+                <input type="password" id="password" name="password" onChangue={onChangePasswordConfirm}></input><br></br>
                 <input type="submit" value="registrarse"></input>
             </form>
         </div>
